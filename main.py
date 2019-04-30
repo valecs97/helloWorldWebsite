@@ -11,6 +11,8 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
+    print("New visitor")
+    sys.stdout.flush()
     try:
         visits = redis.incr("counter")
     except RedisError:
