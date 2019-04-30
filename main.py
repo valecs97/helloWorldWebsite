@@ -2,6 +2,7 @@ from flask import Flask
 from redis import Redis, RedisError
 import os
 import socket
+import sys
 
 # Connect to Redis
 redis = Redis(host="192.168.0.136", db=0, socket_connect_timeout=2, socket_timeout=2)
