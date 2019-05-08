@@ -22,7 +22,7 @@ def hello():
     html = "<h3>Hello {name}!</h3>" \
            "<b>GENERAL:</b> {hostname}<br/>" \
            "<b>Visits:</b> {visits}"
-    return html.format(name=os.getenv("NAME", "THERE WEBHOOK TEST 1"), hostname=socket.gethostname(), visits=visits)
+    return html.format(name=os.getenv("NAME", "THERE WEBHOOK TEST 2"), hostname=socket.gethostname(), visits=visits)
 
 
 if __name__ == "__main__":
